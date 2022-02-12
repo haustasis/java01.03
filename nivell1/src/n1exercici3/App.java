@@ -31,9 +31,7 @@ public class App {
         // HashSet
         HashSet<String> hashSet0 = new HashSet<>();
         do {
-            if(Generadora.seguentPersonatge().length() != 0) {
                 hashSet0.add(Generadora.seguentPersonatge());
-            }
         } while(Generadora.contador != 0);
         System.out.println("HashSet");
         for(String str : hashSet0) {
@@ -44,9 +42,7 @@ public class App {
         // LinkedHashSet
         LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<>();
         do {
-            if(Generadora.seguentPersonatge().length() != 0) {
                 linkedHashSet0.add(Generadora.seguentPersonatge());
-            }
         } while(Generadora.contador != 0);
         System.out.println("LinkedHashSet");
         for(String str : linkedHashSet0) {
@@ -57,9 +53,7 @@ public class App {
         // TreeSet
         TreeSet<String> treeSet0 = new TreeSet<>();
         do {
-            if(Generadora.seguentPersonatge().length() != 0) {
                 treeSet0.add(Generadora.seguentPersonatge());
-            }
         } while(Generadora.contador != 0);
         System.out.println("TreeSet");
         for(String str : treeSet0) {
