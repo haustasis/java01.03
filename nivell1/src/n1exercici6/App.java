@@ -23,6 +23,6 @@ public class App {
     private static ListIterator<Integer> getIterator(LinkedList<Integer> list) {
         return list.listIterator( list.size() / 2 );
     }
-    
+
 }
 
