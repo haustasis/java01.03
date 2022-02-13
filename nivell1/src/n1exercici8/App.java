@@ -1,8 +1,26 @@
 package n1exercici8;
-/*
-Exercici 8. Emplena un mapa LinkedHashMap amb claus de tipus String i objectes del tipus que prefereixi.
-Extregui les parelles, ordeni-les segons les claus (en ordre alfabètic) i torni a inserir-les en el mapa.
-Idea: Fes servir un ArrayList per realitzar l'ordenació amb la classe Comparator.
- */
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+
 public class App {
+    public static void main(String[] args) {
+        LinkedHashMap<String, String> lhm0 = new LinkedHashMap<String, String>();
+        lhm0.put("uno", "Rusia");
+        lhm0.put("dos", "Ucrania");
+        lhm0.put("tres", "USA");
+        lhm0.put("cuatro", "Estonia");
+        lhm0.put("cinco", "Israel");
+        lhm0.put("seis", "Singapur");
+
+        ArrayList<String> lmh0Keys = new ArrayList<>(lhm0.keySet());
+
+        Collections.sort(lmh0Keys);
+
+        for(String str: lmh0Keys){
+            System.out.println(str);
+        }
+
+    }
 }
